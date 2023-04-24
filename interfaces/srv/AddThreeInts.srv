@@ -1,0 +1,8 @@
+## AddThreeInts.srv ##
+# request
+int64 a
+int64 b
+int64 c
+---
+#response
+int64 sum
