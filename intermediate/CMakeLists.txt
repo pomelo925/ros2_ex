@@ -9,6 +9,10 @@ endif()
 find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(std_msgs REQUIRED)
+find_package(tf2 REQUIRED)
+find_package(tf2_ros REQUIRED)
+find_package(geometry_msgs REQUIRED)
+
 
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
@@ -24,6 +28,9 @@ endif()
 
 add_executable(01_param src/01_param.cpp)
 ament_target_dependencies(01_param rclcpp std_msgs)
+
+add_executable(02_static_broadcaster src/02_static_broadcaster.cpp)
+ament_target_dependencies(02_static_broadcaster rclcpp geometry_msgs tf2_ros tf2)
 
 install(TARGETS
   01_param

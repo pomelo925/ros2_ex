@@ -1,0 +1,24 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/home/pomelo/Pomelo_Home/ros2_ws/install/interfaces/include/**",
+        "/opt/ros/humble/include/**",
+        "/home/pomelo/Pomelo_Home/ros2_ws/src/basic/include/**",
+        "/home/pomelo/Pomelo_Home/ros2_ws/src/interfaces/include/**",
+        "/home/pomelo/Pomelo_Home/ros2_ws/src/intermediate/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}
