@@ -43,6 +43,7 @@ ament_target_dependencies(06_client rclcpp std_msgs example_interfaces)
 add_executable(07_callback_lambda src/07_callback_lambda.cpp)
 ament_target_dependencies(07_callback_lambda rclcpp std_msgs example_interfaces)
 
+
 add_executable(08_customMsg_pub src/08_customMsg_pub.cpp)
 ament_target_dependencies(08_customMsg_pub rclcpp interfaces)    # CHANGE
 add_executable(09_customMsg_sub src/09_customMsg_sub.cpp)
@@ -57,15 +58,12 @@ add_library(12_my_source_file src/12_my_source_file.cpp)
 add_executable(13_some_other_node src/13_some_other_node.cpp)
 target_link_libraries(13_some_other_node 12_my_source_file)
 
-# this line to exports the library so other pkgs can use
-ament_export_targets(12_my_source_file)
-
 install(TARGETS
   01_hello
   02_pub 
   03_sub
   04_pub_sub
-  
+  05_server
   06_client
   07_callback_lambda
   08_customMsg_pub
